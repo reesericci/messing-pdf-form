@@ -6,10 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'BaseSendGridClientInterface' => $vendorDir . '/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php',
     'FPDM' => $vendorDir . '/tmw/fpdm/src/fpdm.php',
     'FilterASCII85' => $vendorDir . '/tmw/fpdm/src/filters/FilterASCII85.php',
     'FilterASCIIHex' => $vendorDir . '/tmw/fpdm/src/filters/FilterASCIIHex.php',
     'FilterFlate' => $vendorDir . '/tmw/fpdm/src/filters/FilterFlate.php',
     'FilterLZW' => $vendorDir . '/tmw/fpdm/src/filters/FilterLZW.php',
     'FilterStandard' => $vendorDir . '/tmw/fpdm/src/filters/FilterStandard.php',
+    'SendGrid' => $vendorDir . '/sendgrid/sendgrid/lib/SendGrid.php',
+    'TwilioEmail' => $vendorDir . '/sendgrid/sendgrid/lib/TwilioEmail.php',
 );

@@ -6,12 +6,24 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitfb1a0ee7d1f16815c83f372d6722716c
 {
+    public static $files = array (
+        '79f66bc0a1900f77abe4a9a299057a0a' => __DIR__ . '/..' . '/starkbank/ecdsa/src/ellipticcurve.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'm' => 
         array (
             'mikehaertl\\tmp\\' => 15,
             'mikehaertl\\shellcommand\\' => 24,
             'mikehaertl\\pdftk\\' => 17,
+        ),
+        'S' => 
+        array (
+            'SendGrid\\Stats\\' => 15,
+            'SendGrid\\Mail\\' => 14,
+            'SendGrid\\EventWebhook\\' => 22,
+            'SendGrid\\Contacts\\' => 18,
+            'SendGrid\\' => 9,
         ),
     );
 
@@ -28,15 +40,38 @@ class ComposerStaticInitfb1a0ee7d1f16815c83f372d6722716c
         array (
             0 => __DIR__ . '/..' . '/mikehaertl/php-pdftk/src',
         ),
+        'SendGrid\\Stats\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/stats',
+        ),
+        'SendGrid\\Mail\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/mail',
+        ),
+        'SendGrid\\EventWebhook\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/eventwebhook',
+        ),
+        'SendGrid\\Contacts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/contacts',
+        ),
+        'SendGrid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sendgrid/php-http-client/lib',
+        ),
     );
 
     public static $classMap = array (
+        'BaseSendGridClientInterface' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php',
         'FPDM' => __DIR__ . '/..' . '/tmw/fpdm/src/fpdm.php',
         'FilterASCII85' => __DIR__ . '/..' . '/tmw/fpdm/src/filters/FilterASCII85.php',
         'FilterASCIIHex' => __DIR__ . '/..' . '/tmw/fpdm/src/filters/FilterASCIIHex.php',
         'FilterFlate' => __DIR__ . '/..' . '/tmw/fpdm/src/filters/FilterFlate.php',
         'FilterLZW' => __DIR__ . '/..' . '/tmw/fpdm/src/filters/FilterLZW.php',
         'FilterStandard' => __DIR__ . '/..' . '/tmw/fpdm/src/filters/FilterStandard.php',
+        'SendGrid' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/SendGrid.php',
+        'TwilioEmail' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/TwilioEmail.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

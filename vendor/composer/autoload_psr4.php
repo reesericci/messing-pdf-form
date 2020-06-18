@@ -9,4 +9,9 @@ return array(
     'mikehaertl\\tmp\\' => array($vendorDir . '/mikehaertl/php-tmpfile/src'),
     'mikehaertl\\shellcommand\\' => array($vendorDir . '/mikehaertl/php-shellcommand/src'),
     'mikehaertl\\pdftk\\' => array($vendorDir . '/mikehaertl/php-pdftk/src'),
+    'SendGrid\\Stats\\' => array($vendorDir . '/sendgrid/sendgrid/lib/stats'),
+    'SendGrid\\Mail\\' => array($vendorDir . '/sendgrid/sendgrid/lib/mail'),
+    'SendGrid\\EventWebhook\\' => array($vendorDir . '/sendgrid/sendgrid/lib/eventwebhook'),
+    'SendGrid\\Contacts\\' => array($vendorDir . '/sendgrid/sendgrid/lib/contacts'),
+    'SendGrid\\' => array($vendorDir . '/sendgrid/php-http-client/lib'),
 );
