@@ -1,0 +1,14 @@
+{
+    "name": "reesericci/messing-office-form",
+    "type": "project",
+    "authors": [
+        {
+            "name": "reesericci",
+            "email": "reesericci@nyctech.cloud"
+        }
+    ],
+    "require": {
+        "tmw/fpdm": "^2.9",
+        "mikehaertl/php-pdftk": "^0.8.0"
+    }
+}
