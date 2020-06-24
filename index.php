@@ -27,7 +27,7 @@ $pdf->fillForm('data.fdf')
 $file =  (string) $pdf->getTmpFile();
 $filename =  'officeform_' . microtime();
 if (error_get_last() != null) {
-  echo '<h2 style="font-family: \'Arial\';"> There seems to be an error. Please report the issue (error report) with details of the error (screenshot maybe?) on our GitHub here: <a href="https://github.com/reesericci/pdf-php-form/issues">https://github.com/reesericci/pdf-php-form/issues</a> I\'ll be as quick as I can to solve the issue!</h1>';
+  echo '<h2 style="font-family: \'Arial\';"> There seems to be an error. Please report the issue (error report) with details of the error (screenshot maybe?) on our GitHub here: <a href="https://github.com/reesericci/messing-pdf-form/issues">https://github.com/reesericci/messing-pdf-form/issues</a> I\'ll be as quick as I can to solve the issue!</h1>';
   die();
 };
 // Send Email
@@ -44,13 +44,13 @@ try {
     $response = $sendgrid->send($email);
 } catch (Exception $e) {
     echo 'Caught exception: '.  $e->getMessage(). "\n";
-    echo '<h2 style="font-family: \'Arial\';"> There seems to be an error. Please report the issue (error report) with details of the error (screenshot maybe?) on our GitHub here: <a href="https://github.com/reesericci/messing-office-form/issues">https://github.com/reesericci/messing-office-form/issues</a> I\'ll be as quick as I can to solve the issue!</h1>';
+    echo '<h2 style="font-family: \'Arial\';"> There seems to be an error. Please report the issue (error report) with details of the error (screenshot maybe?) on our GitHub here: <a href="https://github.com/reesericci/messing-pdf-form/issues">https://github.com/reesericci/messing-pdf-form/issues</a> I\'ll be as quick as I can to solve the issue!</h1>';
     die();
 };
 // Wrap Up
 fclose($data_file);
 if (error_get_last() != null) {
-  echo '<h2 style="font-family: \'Arial\';"> There seems to be an error. Please report the issue (error report) with details of the error (screenshot maybe?) on our GitHub here: <a href="https://github.com/reesericci/pdf-php-form/issues">https://github.com/reesericci/pdf-php-form/issues</a> I\'ll be as quick as I can to solve the issue!</h1>';
+  echo '<h2 style="font-family: \'Arial\';"> There seems to be an error. Please report the issue (error report) with details of the error (screenshot maybe?) on our GitHub here: <a href="https://github.com/reesericci/messing-pdf-form/issues">https://github.com/reesericci/messing-pdf-form/issues</a> I\'ll be as quick as I can to solve the issue!</h1>';
   die();
 };
 ?>
